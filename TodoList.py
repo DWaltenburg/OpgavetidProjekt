@@ -9,6 +9,9 @@ class TodoList:
     def Add(self, stringToAdd):
         if(len(self.__list) < self.__MAXLISTSIZE):
             self.__list.append(stringToAdd)
+        else:
+            self.__MAXLISTSIZE *=2
+            self.__list.append(stringToAdd)
 
     def Remove(self, stringToRemove):
         newList = []
