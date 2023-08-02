@@ -1,11 +1,5 @@
-arr = [1,2,3,4,5,6,7,8,9,10]
-res = 0
-for item in arr:
-    if(item % 2):
-        res +=item
-print(res)
-
 """
+Opgave 1 som while-loop
 res = 0
 i=0
 while(i< len(arr)):
@@ -15,3 +9,9 @@ while(i< len(arr)):
 print(res)
 
 """
+arr = [1,2,3,4,5,6,7,8,9,10]
+res = 0
+for item in arr:
+    if(item % 2):
+        res +=item
+print(res)
