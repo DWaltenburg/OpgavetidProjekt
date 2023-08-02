@@ -13,11 +13,22 @@ class TodoList:
             if(item != stringToRemove):
                 newList.append(item)
         self.list = newList
+    
+    def Find(self,stringToSearch):
+        for item in self.list:
+            if(item == stringToSearch):
+                return True
+        return False
 
 myListObject = TodoList()
 
 myListObject.Add("test")
 myListObject.Add("testsdfgsdfg")
 
-myListObject.Remove("test")
+print(myListObject.list)
+
+if(myListObject.Find("test")):
+    myListObject.Remove("test")
+    print("removed test")
+
 print(myListObject.list)
